@@ -8,4 +8,10 @@ module ApplicationHelper
       page_title + " | " + base_title
     end
   end
+
+  # def success_msg
+  #   content_tag(:div, class: "alert alert-success") do
+  #     flash[:success]
+  #   end
+  # end
 end
