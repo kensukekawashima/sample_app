@@ -63,12 +63,25 @@ group :test do
   gem 'chromedriver-helper'
 end
 
+group :production do
+  #upload img
+  gem 'fog'
+end
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # bootstrap
 gem 'bootstrap-sass', '3.3.7'
 gem 'jquery-rails'
+
+#create fake accounts and posts
 gem 'faker'
+
+#pagination
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
+
+#upload img
+gem 'carrierwave'
+gem 'mini_magick'
